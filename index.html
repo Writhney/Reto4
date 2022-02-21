@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="./img/ico.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
+    
+    <!-- Primary Meta Tags -->
+    <title>Generación de Cartillas de Respuesta</title>
+    <meta name="title" content="Generación de Cartillas de Respuesta">
+    <meta name="description" content="Plataforma para generar y calificar cartillas de respuesta.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://writhney.github.io/Reto4/">
+    <meta property="og:title" content="Generación de Cartillas de Respuesta">
+    <meta property="og:description" content="Plataforma para generar y calificar cartillas de respuesta.">
+    <meta property="og:image" content="http://www.glajumedia.com/wp-content/uploads/2020/07/front-end-development-flat_107173-16796.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://writhney.github.io/Reto4/">
+    <meta property="twitter:title" content="Generación de Cartillas de Respuesta">
+    <meta property="twitter:description" content="Plataforma para generar y calificar cartillas de respuesta.">
+    <meta property="twitter:image" content="http://www.glajumedia.com/wp-content/uploads/2020/07/front-end-development-flat_107173-16796.jpg">
+    <title>Cartillas</title>
+</head>
+<body class="body">
+  <script src="./js/index.js"></script>
+
+
+    <header class="header">
+        <nav class="header-nav">
+          <a href="#" class="header-nav__link-logo-container">
+            <img src="./img/technology.png" 
+            alt="Logo Empresa" class="header-nav__logo" />
+          </a>
+
+          <label for="menu" class="header-nav__menu-icon">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" name="menu" id="menu" class="header-nav__menu-checkbox" />
+          
+          <ul class="header-nav__link-list">
+            <li class="header-nav__link-item">
+              <a href="#generacion" class="header-nav__link">Generación</a>
+            </li>
+            <li class="header-nav__link-item">
+              <a href="#" class="header-nav__link">Calificación</a>
+            </li>
+            <li class="header-nav__link-item">
+              <a href="#informacion" class="header-nav__link">Información</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </header>
+
+      <main class="requisitoCartilla" id="generacion">
+        <div name="form-reloj" id="contenedorReloj" class="contenedor-reloj">
+          <h3 id="relojPantalla" class="relojPantalla"></h3>
+        </div>
+        <h1  class="titulo-cartilla" >Generación de Cartillas de Respuesta</h1>
+        <form class="form-container">
+        
+          <section class="section-info">
+
+          <div class="cantidadPreguntas-container">
+            <label class="labelPreguntas" for="">Cantidad de Preguntas</label>
+              <input id="cantidadPreguntas" class="input-pregunta" min="1" max="100" maxlength="3" type="number" name="cantPreg" required>
+          </div>
+          <div class="cantidadPreguntas-container">
+            <label class="labelPreguntas" for="">Cantidad de Alternativas</label>
+              <input id="cantidadAlternativas" class="input-pregunta" min="1" max="6" maxlength="1" type="number" name="cantAlte" required>
+          </div>
+          <div class="cantidadPreguntas-container">
+            <label class="labelPreguntas" for="">Subir Datos</label>
+              <input id="inputFile" class="input-file" type="file" name="datosEstu" src="" alt="">
+          </div>
+
+          </section>
+          
+          <section class="section-info2">
+            <div class="container-cartilla">
+              <button href="#preguntas" class="boton-GenerarI" id="botonGenerar">Generar
+               <img class="boton-img" src="https://cdn-icons-png.flaticon.com/512/20/20121.png" alt="">
+              </button>
+            </div>
+            <div class="container-cartilla">
+              <button class="boton-GenerarI" > Imprimir
+                <img class="boton-img" src="https://cdn-icons-png.flaticon.com/512/4305/4305625.png" alt="">
+                </button>
+            </div>
+          </section>
+        </form>
+      
+      </main>
+
+    <section class="cartilla"> 
+      
+
+      <section class="cartilla-contedor">
+        <section class="contenedor-logo">
+          <img class="logo-cartilla" src="https://examen.admisionunajma.pe/public/img/para%20admision.png" alt="LogoInstutucón">
+        </section>
+        <seccion class="seccion-cartilla">
+          <div class="contenedor-lista">              
+            <h2 class="cartilla-titulo">Datos del Postulante</h2>
+
+            <ul class="contenedor-lista-datos">
+              <li class="descripcion">DNI</li>
+              <li class="dato">70254251</li>
+              <li class="descripcion">NOMBRES</li>
+              <li class="dato">KEVIN ADRIEL</li>
+              <li class="descripcion">APELLIDOS</li>
+              <li class="dato">GONZALES LOAYZA</li>
+              <li class="descripcion">CARRERA PROFESIONAL</li>
+              <li class="dato">CONTABILIDAD</li>
+            </ul>
+          </div>
+          <div class="contenedor-aula-url">
+            <h2 class="aula-titulo">Aula 101</h2>
+            <figure class="contenedor-url" >
+              <img class="url" src="https://static-unitag.com/images/help/QRCode/qrcode.png?mh=07b7c2a2" alt="codigoQR">
+            </figure>
+          </div>
+        </seccion>
+        
+        <section class="seccion-cartilla2">
+          <div class="contenedor-instrucciones">
+            <h2 class="titulo-instrucciones">Instrucciones</h2>
+            <ul class="lista_instrucciones">
+              <li class="inst">Rellene el círculo completamente y solo uno por respuesta</li>
+              <li class="inst">No arrugue este formulario</li>
+              <li class="inst">No use tinta ni boligrafo</li>
+              <li class="inst">Solo el aplicador o personal autorizado llenará la hora de entrega</li>
+              <li class="inst">Si ha errado la respuesta, borre con cuidado la cartilla y proceda a rellenar su respuesta</li>
+            </ul>
+          </div>
+        </section>
+
+        <h2 class="titulo-respuestas">Cartilla de Respuestas</h2>
+        <div class="contenedor-preguntas" id="contenedorPreguntas">
+        </div>
+      </section>
+    </section> 
+
+    <figure class="separador-container">
+      <svg class="wave-separador" xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 1440 320"><path fill="#ffffffb6" fill-opacity="1" 
+      d="M0,128L30,133.3C60,139,120,149,180,165.3C240,181,300,203,360,213.3C420,224,480,224,540,213.3C600,203,660,181,720,165.3C780,149,840,139,900,144C960,149,1020,171,1080,197.3C1140,224,1200,256,1260,272C1320,288,1380,288,1410,288L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+      </svg>
+    </figure>
+  
+
+
+      <footer class="footer" id="informacion">
+        
+        <h2 class="titulo-principal-info">Información</h2>
+        <div class="contenedor-info">
+
+          <div class="Nosotros">
+            <h2 class="titulo-info">Acerca de Nosotros</h2>
+            <p class="info">Somos una empresa enfocada en el area de desarrollo 
+              de Sistemas de Información, Auditoria y soporte de Tecnologias de la Información</p>
+              <a class="contenedor-icono" href="#">
+                <img class="icono" src="https://cdn-icons-png.flaticon.com/512/1077/1077093.png" alt="instagram" ></a>
+              <a class="contenedor-icono" href="">
+                <img class="icono" src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="twitter" ></a>
+              <a class="contenedor-icono" href="">
+                <img class="icono" src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="facebook" ></a>
+              <a class="contenedor-icono" href="">
+                <img class="icono" src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="youtube"></a>  
+          </div>
+          <div class="direccion">
+            <h2 class="titulo-info">Direción</h2>
+              <div class="contenedor-direccion">
+                <a class="contenedor-icono" href="">
+                    <img class="icono" src="https://cdn-icons-png.flaticon.com/512/48/48703.png" alt="ubicacion"></a>
+                <p class="info">Apurímas, Andahuaylas</p>
+              </div>
+              <div class="contenedor-direccion">
+                <a class="contenedor-icono" href="">
+                    <img class="icono" src="https://cdn-icons-png.flaticon.com/512/733/733641.png" alt="whatsapp" ></a>
+                <p class="info">925 523 541</p>
+              </div>
+              <div class="contenedor-direccion">
+                <a class="contenedor-icono" href="">
+                    <img class="icono" src="https://cdn-icons-png.flaticon.com/512/725/725643.png" alt="correo" width="30">
+                </a>
+                <p class="info">Empresa@gmail.com</p>
+            </div>
+          </div>
+          <div class="contacto">
+            <h2 class="titulo-info">Te Contactamos</h2>
+            <input class="input-contacto" type="text" name="nombre" id="nombre" placeholder="Nombres">
+            <input class="input-contacto" type="email" name="email" id="email" placeholder="Email">
+            <textarea class="input-contacto" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button class="boton-contacto">Enviar</button>
+          </div>
+        
+        </div>
+
+      </footer>
+
+      <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
